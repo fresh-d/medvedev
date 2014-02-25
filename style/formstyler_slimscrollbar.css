@@ -9,13 +9,13 @@
   left: 1px;
 	vertical-align: top;
 	cursor: pointer;
-  background: url(../images/checkbox.png) no-repeat;
+  background: url(./images/checkbox.png) no-repeat;
 }
 .jq-checkbox.checked {
 	width: 21px;
 	height: 20px;
 	display: block;
-  background: url(../images/checkbox.png) 0px -20px no-repeat;
+  background: url(./images/checkbox.png) 0px -20px no-repeat;
 }
 .jq-radio {
 	width: 20px;
@@ -25,14 +25,14 @@
   left: 1px;
 	vertical-align: top;
 	cursor: pointer;
-  background: url(../images/radio.png) no-repeat;
+  background: url(./images/radio.png) no-repeat;
 	border: 0px;
 }
 .jq-radio.checked {
 	width: 20px;
 	height: 20px;
 	display: block;
-  background: url(../images/radio.png) 0px -20px no-repeat;
+  background: url(./images/radio.png) 0px -20px no-repeat;
 }
 .jq-checkbox.disabled,
 .jq-radio.disabled {
@@ -128,13 +128,13 @@
   padding: 0px 20px 0px 8px;
   float: none !important;
   cursor: pointer;
-	background:  url(../images/arrow_seldown.png) 96% center no-repeat;
+	background:  url(./images/arrow_seldown.png) 96% center no-repeat;
   border: 1px solid #abb7bd;
   border-left: 4px solid #e76a6a;
 }
 .box .jq-selectbox.opened .select {
   padding: 0px 20px 0px 11px;
-	background:  url(../images/arrow_selup.png) 96% center no-repeat;
+	background:  url(./images/arrow_selup.png) 96% center no-repeat;
   border: 1px solid #abb7bd;
 }
 .box .jq-selectbox .select .text {
@@ -194,7 +194,7 @@
   width: 7px;
   height: 96.9% !important;
   right: 8px !important;
-	background: url(../images/slimscrollbar.png) center top repeat-y !important;
+	background: url(./images/slimscrollbar.png) center top repeat-y !important;
   border-radius: 0px !important;
   -moz-border-radius: 0px !important;
   -webkit-border-radius: 0px !important;

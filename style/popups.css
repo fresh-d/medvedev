@@ -43,7 +43,7 @@
   font: normal 12px/18px arial, tahoma, verdana;
   text-decoration: none;
   color: #1a64d2;
-  background: url(../images/close_popup.png) no-repeat;
+  background: url(./images/close_popup.png) no-repeat;
 }      
 .popup a.close span {
   border-bottom: 1px dotted #1a64d2;
@@ -116,7 +116,7 @@
 .popup form .body,
 .commentform form .body {
   margin-bottom: 20px;
-  background: url(../images/bord_vert.png) 273px 0px repeat-y;
+  background: url(./images/bord_vert.png) 273px 0px repeat-y;
 }
 #poptest.popup .body {
   color: #000000;
@@ -147,7 +147,7 @@
 .bord_hori {
   height: 3px;
   overflow: hidden;
-  background: url(../images/bord_hori.png) repeat-x;
+  background: url(./images/bord_hori.png) repeat-x;
 }
 ol.listing {
   padding: 0px;
@@ -249,14 +249,14 @@ ol.listing li a:hover {
   margin: 0px;
   font: bold 12px/34px arial, tahoma, verdana;
   text-align: center;
-	background: url(../images/btn_green.gif) 0px 0px repeat-x;
+	background: url(./images/btn_green.gif) 0px 0px repeat-x;
   border: 0px;
 }
 .popup form input[type="submit"]:hover,
 .commentform form input[type="submit"]:hover,
 .popup form input[type="button"]:hover,
 .commentform form input[button="submit"]:hover {
-	background: url(../images/btn_green.gif) 0px -34px repeat-x;
+	background: url(./images/btn_green.gif) 0px -34px repeat-x;
 }
 .fog {
   position: relative;
@@ -343,7 +343,7 @@ ol.listing li a:hover {
   color: #ffffff;
   cursor: pointer;
   box-shadow: inset 0px 0px 1px #ffffff;
-  background: #286cd6 url(../images/btn_blue.gif) repeat-x;
+  background: #286cd6 url(./images/btn_blue.gif) repeat-x;
   border: 0px;
   border-radius: 8px;
   -moz-border-radius: 8px;
@@ -367,7 +367,7 @@ ol.listing li a:hover {
   bottom: 0px;
 	right: 0px;
 	display: none;
-	background: url(../images/1x1.png) repeat;
+	background: url(./images/1x1.png) repeat;
 	z-index: 998;
 }
 /*end POPUP*/

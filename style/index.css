@@ -51,12 +51,12 @@ header, article, section, aside, nav, hgroup, footer {
 	transition: 1s;
 	-webkit-transition: 1s;
 	-moz-transition: 1s;
-  background: url(../images/scroll_top.png) no-repeat;
+  background: url(./images/scroll_top.png) no-repeat;
 }
 #scroll_top a:hover,
 #scroll_top_annonce a:hover {
 	color: #ffffff;
-  background: url(../images/scroll_top_hover.png) no-repeat;
+  background: url(./images/scroll_top_hover.png) no-repeat;
 }
 /*scroll_top*/
 
@@ -176,42 +176,42 @@ a.nodecor:hover {
 .dotted.enter a:link,
 .dotted.enter a:visited {
   padding-left: 15px;
-  background: url(../images/key.png) no-repeat;
+  background: url(./images/key.png) no-repeat;
 }
 .dotted.enter a.cab:link,
 .dotted.enter a.cab:visited {
   padding-left: 20px;
   cursor: default;
-  background: url(../images/key_cab.png) 0px 3px no-repeat;
+  background: url(./images/key_cab.png) 0px 3px no-repeat;
 }
 .dotted.callback a:link,
 .dotted.callback a:visited {
   padding-left: 18px;
   color: #54989d;
-  background: url(../images/callback.png) 0px 4px no-repeat;
+  background: url(./images/callback.png) 0px 4px no-repeat;
 }
 .dotted.callback.ordform a:link,
 .dotted.callback.ordform a:visited {
   padding: 0px 18px 0px 0px;
   line-height: 15px;
-  background: url(../images/callback_foot.png) right 2px no-repeat;
+  background: url(./images/callback_foot.png) right 2px no-repeat;
   border: 0px;
 }
 .dotted.enter a:hover {
   color: #cc3333;
-  background: url(../images/key_red.png) no-repeat;
+  background: url(./images/key_red.png) no-repeat;
 }
 .dotted.callback a:hover {
   color: #cc3333;
-  background: url(../images/callback_red.png) 0px 4px no-repeat;
+  background: url(./images/callback_red.png) 0px 4px no-repeat;
 }
 .dotted.callback.ordform a:hover {
   color: #cc3333;
-  background: url(../images/callback_foot_red.png) right 2px no-repeat;
+  background: url(./images/callback_foot_red.png) right 2px no-repeat;
 }
 .dotted.enter a.cab:hover {
   color: #000000;
-  background: url(../images/key_cab.png) 0px 3px no-repeat;
+  background: url(./images/key_cab.png) 0px 3px no-repeat;
 }
 .dotted.enter a.cab:hover span {
   border-bottom-color: #000000 !important;
@@ -370,10 +370,10 @@ h4 a:hover {
   display: block;
   text-decoration: none;
   color: #ffffff;
-  background: url(../images/close.png) 0px 5px no-repeat;
+  background: url(./images/close.png) 0px 5px no-repeat;
 }
 .block_annonce .close:hover {
-  background: url(../images/close_white.png) 0px 5px no-repeat;
+  background: url(./images/close_white.png) 0px 5px no-repeat;
 }
 .block_annonce .close a span {
   border-bottom: 1px dotted #98c1c4;
@@ -405,13 +405,13 @@ ul.cycle li {
   margin: 0px 0px 5px 0px;
   overflow: hidden;
   list-style: none;
-  /*background: url(../images/tire.gif) 0px 9px no-repeat;*/
+  /*background: url(./images/tire.gif) 0px 9px no-repeat;*/
 }
 /*ul.dot li {
-  background: url(../images/dot.png) 2px 9px no-repeat;
+  background: url(./images/dot.png) 2px 9px no-repeat;
 }*/
 ul.cycle li {
-  background: url(../images/cycle.png) 0px 6px no-repeat;
+  background: url(./images/cycle.png) 0px 6px no-repeat;
 }
 /*end sborka*/
 
@@ -447,7 +447,7 @@ input.btn.keybtn {
   padding-left: 45px;
   margin: 0px;
   font: bold 12px/34px arial, tahoma, verdana;
-  background: url(../images/key_popup.jpg) no-repeat;
+  background: url(./images/key_popup.jpg) no-repeat;
   border: 0px;
 }
 a.btn.keybtn:hover,
@@ -555,7 +555,7 @@ header .snowflakes {
   top: 36px;
   left: 0px;
   right: 0px;
-  background: url(../images/snowflakes.png) center top repeat-x;
+  background: url(./images/snowflakes.png) center top repeat-x;
 }
 
 /*block_top*/
@@ -652,12 +652,12 @@ ul.navtop li.active a:hover span {
   padding: 20px 0px;
   overflow: hidden;
   font: normal 12px/15px arial, tahoma, verdana;
-  background: #f4f6f7 url(../images/uzor_bgs.gif) repeat-x;
+  background: #f4f6f7 url(./images/uzor_bgs.gif) repeat-x;
 }
 .uzor {
   height: 10px;
   overflow: hidden;
-  background: url(../images/uzor.png) center top repeat-x;
+  background: url(./images/uzor.png) center top repeat-x;
 }
 #logotype {
   width: 20%;
@@ -768,12 +768,12 @@ form.search input[type="submit"] {
   text-decoration: none !important;
   cursor: pointer;
   color: #ffffff;
-	background: #54989d url(../images/btn_loop.png) 13px 9px no-repeat;
+	background: #54989d url(./images/btn_loop.png) 13px 9px no-repeat;
   border: 0px;
   border-bottom: 3px solid #22666b;
 }
 form.search input[type="submit"]:hover {
-	background: #2d9da6 url(../images/btn_loop.png) 13px 9px no-repeat;
+	background: #2d9da6 url(./images/btn_loop.png) 13px 9px no-repeat;
 }
 /*end block_search*/
 /*end head_main*/
@@ -783,7 +783,7 @@ form.search input[type="submit"]:hover {
 #container {
   padding: 0px 40px 170px 40px !important;
   overflow: hidden;
-	background: url(../images/uzor_bgs.png) center top repeat-x;
+	background: url(./images/uzor_bgs.png) center top repeat-x;
 }
 body.inside #container {
   padding: 0px 40px 520px 40px !important;        
@@ -877,10 +877,10 @@ ul.sidebar li.active a:visited {
 .uzor_down {
   height: 5px;
   overflow: hidden;
-	background: url(../images/uzor_up.png) 2px 0px repeat-x;
+	background: url(./images/uzor_up.png) 2px 0px repeat-x;
 }
 .uzor_down {
-	background: url(../images/uzor_down.png) 2px 0px repeat-x;
+	background: url(./images/uzor_down.png) 2px 0px repeat-x;
 }
 .block_order .txt {
   margin: 10px 0px 0px 0px;
@@ -910,7 +910,7 @@ form.order.inside.active .blockform {
   height: 3px;
   margin: 5px 0px;
   overflow: hidden;
-	background: url(../images/border.png) repeat-x;
+	background: url(./images/border.png) repeat-x;
 }
 .body_form {
   padding-bottom: 10px;
@@ -929,11 +929,11 @@ form.order.inside.active .blockform {
   display: block;
   text-decoration: none;
   color: #ffffff;
-	background: url(../images/note.png) 16px 8px no-repeat;
+	background: url(./images/note.png) 16px 8px no-repeat;
 }
 .body_form .title a:hover {
   /*text-decoration: underline;*/
-	background: url(../images/note_white.png) 16px 8px no-repeat;
+	background: url(./images/note_white.png) 16px 8px no-repeat;
 }
 form.order {
   padding: 0px;
@@ -1039,10 +1039,18 @@ form.order.inside.profile .passrow.show input[type="text"],
 form.order.inside.profile .passrow.show input[type="password"] {
   color: #757679;
 }
-form.order .row.active input[type="text"] {
-  width: 122px;
+
+form.order .row.active input[type="text"]{width: 122px;}
+
+form.order .row.active input[type="text"],
+form .row input[type="text"].error,
+form .row input[type="password"].error,
+form .row textarea.error
+{
   color: #000000;
-  border: 1px solid #e76a6a;
+  border-top: 1px solid #e76a6a !important;
+  border-right: 1px solid #e76a6a !important;
+  border-bottom: 1px solid #e76a6a !important;
   border-left: 4px solid #e76a6a;
 }
 form.order textarea {
@@ -1112,7 +1120,7 @@ form.order.inside input[type="reset"] {
   margin: 0px;
   font: bold 12px/34px arial, tahoma, verdana;
   text-align: center;
-	background: url(../images/btn_green.gif) 0px 0px repeat-x;
+	background: url(./images/btn_green.gif) 0px 0px repeat-x;
   border: 0px;
 }
 form.order.inside.profile input[type="reset"] {
@@ -1129,7 +1137,7 @@ form.order.inside.profile input[type="reset"] {
 }
 form.order.inside input[type="submit"]:hover,
 form.order.inside input[type="reset"]:hover {
-	background: url(../images/btn_green.gif) 0px -34px repeat-x;
+	background: url(./images/btn_green.gif) 0px -34px repeat-x;
 }
 form.order.inside.profile input[type="reset"]:hover {
   text-decoration: none !important;
@@ -1167,7 +1175,7 @@ form.order.inside .quest a:visited {
   vertical-align: top;
   color: #338888;
   font: italic 25px/32px georgia, 'Times New Roman';
-  background: url(../images/quest2.png) 0px 4px no-repeat;
+  background: url(./images/quest2.png) 0px 4px no-repeat;
 }
 form.order.inside .quest.openform {
   overflow: hidden;
@@ -1177,7 +1185,7 @@ form.order.inside .quest a span {
 }
 form.order.inside .quest a:hover {
   color: #cc3333;
-  background: url(../images/quest_red.png) 0px 4px no-repeat;
+  background: url(./images/quest_red.png) 0px 4px no-repeat;
 }
 form.order.inside .quest a:hover span {
   border-bottom-color: #cc3333;
@@ -1189,7 +1197,7 @@ form.order.inside.feedback .mailbig {
   position: absolute;
   top: -37px;
   right: 0px;
-  background: url(../images/mailbig.png) no-repeat;
+  background: url(./images/mailbig.png) no-repeat;
 }
 form.order.inside.profile .passrow {
   margin: 0px 6.8px 30px 6.8px;
@@ -1253,10 +1261,10 @@ form.order.inside.profile .passrow a.pass_replace:hover span {
 /*end block_quaote*/
 
 /*block_incident*/
+.home .block_incident{overflow: hidden;}
 .block_incident {
   padding: 0px;
   margin: 0px 0px 30px 0px;
-  overflow: hidden;
   position: relative;
 }
 .block_incident.inside {
@@ -1290,7 +1298,11 @@ form.order.inside.profile .passrow a.pass_replace:hover span {
 .block_incident .sideopis {
   padding-top: 15px;
   display: block;
-  overflow: hidden;
+  /*overflow: hidden;*/
+}
+.block_incident .sideopis p {}
+.block_incident .sideopis p img {
+	margin-left: -15px;
 }
 .block_incident .sideopis a:hover {
   color: #cc3333 !important;
@@ -1344,6 +1356,9 @@ a.bordquest:hover {
   color: #cc3333;
   border-bottom-color: #cc3333;
 }
+section .inner-text{margin: 0px 0 0 15px}
+section .inner-text p{}
+section .inner-text p img{margin-left: -15px}
 .tegi {
   margin: 0px 0px 20px 0px;
   overflow: hidden;
@@ -1425,7 +1440,7 @@ ul.directions_else li .show .play {
   position: absolute;
   top: 50%;
   left: 50%;
-  background: url(../images/play.png) no-repeat;
+  background: url(./images/play.png) no-repeat;
 }
 ul.directions li .show:hover .play,
 ul.directions_else li .show:hover .play {
@@ -1500,7 +1515,7 @@ ul.directions_else li a:hover,
   margin-bottom: 10px;
   position: relative;
   left: -16px;
-  background: url(../images/lenta_bgs.png) repeat-x;
+  background: url(./images/lenta_bgs.png) repeat-x;
 }
 .lenta_left {
   width: 216px;
@@ -1508,7 +1523,7 @@ ul.directions_else li a:hover,
   overflow: hidden;
   position: absolute;
   left: 0px;
-  background: url(../images/lenta_left.png) no-repeat;
+  background: url(./images/lenta_left.png) no-repeat;
 }
 .lenta_left_angle {
   width: 47px;
@@ -1516,7 +1531,7 @@ ul.directions_else li a:hover,
   overflow: hidden;
   position: absolute;
   right: -47px;
-  background: url(../images/lenta_left_angle.png) top right no-repeat;
+  background: url(./images/lenta_left_angle.png) top right no-repeat;
 }
 .lenta_right {
   width: 44px;
@@ -1524,7 +1539,7 @@ ul.directions_else li a:hover,
   overflow: hidden;
   position: absolute;
   right: -44px;
-  background: url(../images/lenta_right.png) no-repeat;
+  background: url(./images/lenta_right.png) no-repeat;
 }
 .lenta .quest {
   width: 198px;
@@ -1540,13 +1555,13 @@ ul.directions_else li a:hover,
   padding-left: 50px;
   display: block;
   color: #ffffff;
-  background: url(../images/quest.png) 25px center no-repeat;
+  background: url(./images/quest.png) 25px center no-repeat;
 }
 .lenta .quest a span {
   border-bottom: 1px solid #b2ced0;
 }
 .lenta .quest a:hover {
-  background: url(../images/quest_white.png) 25px center no-repeat;
+  background: url(./images/quest_white.png) 25px center no-repeat;
 }
 .lenta .text {
   min-width: 650px;
@@ -1612,7 +1627,7 @@ ul.directions_else li a:hover,
 }
 .artnews.uzor_wave {
   padding-bottom: 50px;
-  background: url(../images/uzor_wave.png) center bottom repeat-x;
+  background: url(./images/uzor_wave.png) center bottom repeat-x;
 }
 .artnews.answer {
   padding: 15px 0px 0px 0px;
@@ -1625,7 +1640,7 @@ ul.directions_else li a:hover,
   padding: 30px 0px;
   margin: 0px;
   overflow: hidden;
-  background: url(../images/uzor_wave.png) repeat-x;
+  background: url(./images/uzor_wave.png) repeat-x;
 }
 .artnews.faq .post {
   padding: 0px 15px;
@@ -1758,7 +1773,7 @@ ul.directions_else li a:hover,
   font: bold 12px/15px arial, tahoma, verdana;
   text-decoration: none;
   color: #338888;
-  background: url(../images/doc.png) no-repeat;
+  background: url(./images/doc.png) no-repeat;
 }
 .loadfile a:link span,
 .loadfile a:visited span {
@@ -1817,9 +1832,12 @@ ul.directions_else li a:hover,
   font: normal 12px/15px arial, tahoma, verdana;
   border: 1px solid #c0c6cc;
 }
-.comment .post.answer {
-  margin-left: 50px;
-}
+.comment .post.answer {margin-left: 50px;}
+.comment .post+.post {margin-left: 50px;}
+.comment .post+.post+.post {margin-left: 100px;}
+.comment .post+.post+.post+.post {margin-left: 150px;}
+.comment .post+.post+.post+.post+.post {margin-left: 200px;}
+
 .comment .dotted.green.link a:link,
 .comment .dotted.green.link a:visited {
   text-decoration: none;
@@ -1852,13 +1870,13 @@ ul.directions_else li a:hover,
 .block_comments .shad {
   height: 15px;
   margin-bottom: 15px;
-  background: url(../images/shad.png) center top no-repeat;
+  background: url(./images/shad.png) center top no-repeat;
 }
 .wave {
   height: 10px;
   margin-bottom: 15px;
   overflow: hidden;
-  background: url(../images/uzor_wave.png) center top repeat-x;
+  background: url(./images/uzor_wave.png) center top repeat-x;
 }
 /*end block_comments*/
 
@@ -1888,7 +1906,7 @@ ul.directions_else li a:hover,
   top: 0px;
   left: 0px;
   right: 0px;
-  background: url(../images/uzor_map.png) center top repeat-x;
+  background: url(./images/uzor_map.png) center top repeat-x;
 }
 html, body, #map-canvas {
   height: 100%;
@@ -1938,11 +1956,11 @@ html, body, #map-canvas {
   left: 0px;
   text-decoration: none;
   cursor: pointer;
-  background: url(../images/play_default.png) center center no-repeat;
+  background: url(./images/play_default.png) center center no-repeat;
   z-index: 190;
 }
 #video.video:hover .playbtn {
-  background: url(../images/play_active.png) center center no-repeat;
+  background: url(./images/play_active.png) center center no-repeat;
 }
 /*end video*/
 
@@ -1967,7 +1985,7 @@ html, body, #map-canvas {
   text-decoration: none;
   cursor: default;
   color: #757679;
-  background: url(../images/arrow_pageleft_gray.png) left 5px no-repeat;
+  background: url(./images/arrow_pageleft_gray.png) left 5px no-repeat;
 }
 .pages a.arrow_pageright:link,
 .pages a.arrow_pageright:visited {
@@ -1976,7 +1994,7 @@ html, body, #map-canvas {
   overflow: hidden;
   text-decoration: none;
   color: #338888;
-  background: url(../images/arrow_pageright_green.png) right 5px no-repeat;
+  background: url(./images/arrow_pageright_green.png) right 5px no-repeat;
 }
 .pages a.arrow_pageright:link span,
 .pages a.arrow_pageright:visited span {
@@ -1984,7 +2002,7 @@ html, body, #map-canvas {
 }
 .pages a.arrow_pageright:hover {
   color: #cc3333;
-  background: url(../images/arrow_pageright_red.png) right 5px no-repeat;
+  background: url(./images/arrow_pageright_red.png) right 5px no-repeat;
 }
 .pages .block_pages a:link,
 .pages .block_pages a:visited {
@@ -2079,7 +2097,7 @@ footer article {
 footer section {
   padding-top: 20px;
   margin: 0px auto;
-  background: url(../images/bord_foot.gif) repeat-x;
+  background: url(./images/bord_foot.gif) repeat-x;
 }
 footer .content_wrap {
   padding: 0px;
@@ -2140,35 +2158,35 @@ ul.socweb li a:visited,
 }
 ul.socweb li a.vk,
 .popup ul.socweb li a.vk {
-  background: url(../images/socweb/vk.png) no-repeat;
+  background: url(./images/socweb/vk.png) no-repeat;
 }
 ul.socweb.inside li a.vk {
   width: 90px;
-  background: url(../images/socweb/vk2.png) no-repeat;
+  background: url(./images/socweb/vk2.png) no-repeat;
 }
 ul.socweb li a.odnoklassniki,
 .popup ul.socweb li a.odnoklassniki {
-  background: url(../images/socweb/odnoklassniki.png) no-repeat;
+  background: url(./images/socweb/odnoklassniki.png) no-repeat;
 }
 ul.socweb.inside li a.odnoklassniki {
   width: 121px;
-  background: url(../images/socweb/odnoklassniki2.png) no-repeat;
+  background: url(./images/socweb/odnoklassniki2.png) no-repeat;
 }
 ul.socweb li a.facebook,
 .popup ul.socweb li a.facebook {
-  background: url(../images/socweb/facebook.png) no-repeat;
+  background: url(./images/socweb/facebook.png) no-repeat;
 }
 ul.socweb.inside li a.facebook {
   width: 88px;
-  background: url(../images/socweb/facebook2.png) no-repeat;
+  background: url(./images/socweb/facebook2.png) no-repeat;
 }
 ul.socweb li a.google,
 .popup ul.socweb li a.google {
-  background: url(../images/socweb/google.png) no-repeat;
+  background: url(./images/socweb/google.png) no-repeat;
 }
 ul.socweb.inside li a.google {
   width: 83px;
-  background: url(../images/socweb/google2.png) no-repeat;
+  background: url(./images/socweb/google2.png) no-repeat;
 }
 ul.socweb li a:hover,
 .popup ul.socweb li a:hover {
@@ -2221,3 +2239,18 @@ footer a:hover {
   }
 }
 /*end Responsive*/
+
+.sidecenter .b-author{margin: 30px 0 0 15px;}
+.b-author{}
+
+.top-double-border{}
+.top-double-border:before{
+	content: '';
+	position: relative;
+	display: block;
+	height: 1px;
+	margin: 15px 0px;
+	overflow: hidden;
+	border-top: 1px solid #e8ebec;
+	border-bottom: 1px solid #e8ebec;
+}
