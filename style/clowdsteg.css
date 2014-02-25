@@ -1,0 +1,53 @@
+﻿/*Modified 21.01.2014*/
+
+.clowdsteg {
+  width: 175px;
+  overflow: hidden;
+  float: right;
+  position: relative;
+  font: normal 15px/24px arial, tahoma, verdana;
+  color: #338888;
+}
+.clowdsteg span {
+  margin: 0px 5px 5px 0px;
+}
+.clowdsteg a {
+  margin: 0px 5px 5px 0px;
+  text-decoration: none;
+  color: #338888;
+  border-bottom: 1px solid transparent
+}
+.clowdsteg a:hover {
+  color: #cc3333;
+  border-bottom: 1px solid #cc3333;
+}
+.clowdsteg .w1 {
+  font: normal 11px/24px arial, tahoma, verdana;
+}
+.clowdsteg .w2 {
+  font: normal 12px/24px arial, tahoma, verdana;
+}
+.clowdsteg .w3 {
+  font: normal 13px/24px arial, tahoma, verdana;
+}
+.clowdsteg .w4 {
+  font: normal 14px/24px arial, tahoma, verdana;
+}
+.clowdsteg .w5 {
+  font: normal 15px/24px arial, tahoma, verdana;
+}
+.clowdsteg .w6 {
+  font: normal 16px/24px arial, tahoma, verdana;
+}
+.clowdsteg .w7 {
+  font: normal 17px/24px arial, tahoma, verdana;
+}
+.clowdsteg .w8 {
+  font: normal 18px/24px arial, tahoma, verdana;
+}
+.clowdsteg .w9 {
+  font: normal 19px/24px arial, tahoma, verdana;
+}
+.clowdsteg .w10 {
+  font: normal 22px/24px arial, tahoma, verdana;
+}

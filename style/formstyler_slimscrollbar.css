@@ -1,0 +1,280 @@
+﻿/*Modified 18.01.2014*/
+
+/*checkbox, radio*/
+.jq-checkbox {
+	width: 21px;
+	height: 20px;
+	position: absolute !important;
+  top: 2px;
+  left: 1px;
+	vertical-align: top;
+	cursor: pointer;
+  background: url(../images/checkbox.png) no-repeat;
+}
+.jq-checkbox.checked {
+	width: 21px;
+	height: 20px;
+	display: block;
+  background: url(../images/checkbox.png) 0px -20px no-repeat;
+}
+.jq-radio {
+	width: 20px;
+	height: 20px;
+	position: absolute !important;
+  top: 2px;
+  left: 1px;
+	vertical-align: top;
+	cursor: pointer;
+  background: url(../images/radio.png) no-repeat;
+	border: 0px;
+}
+.jq-radio.checked {
+	width: 20px;
+	height: 20px;
+	display: block;
+  background: url(../images/radio.png) 0px -20px no-repeat;
+}
+.jq-checkbox.disabled,
+.jq-radio.disabled {
+  opacity: .5;
+  filter: alpha(opacity=50);
+  -moz-opacity: .5;
+  -webkit-opacity: .5;
+  -o-opacity: .5;
+  -khtl-opacity: .5;
+  behavior: url(PIE.htc);
+}
+/*end checkbox, radio*/
+
+/*file*/
+.jq-file {
+	box-shadow: inset 1px 1px #f1f1f1,
+                    0px 1px 2px #000000;
+	background: #ffffff;
+	border: 1px solid #ffffff;
+	border-bottom-color: #b3b3b3;
+	border-radius: 4px;
+  behavior: url(PIE.htc);
+}
+.jq-file.focused {
+	border: 1px solid #5794bf;
+}
+.jq-file input {
+	height: auto;
+	line-height: 1em;
+	cursor: pointer;
+}
+.jq-file__name {
+	width: 170px;
+	padding: 7px 10px 6px 10px;
+	font: 14px/18px arial, tahoma, verdana;
+	background: none;
+	color: #333222;
+	border: none;
+}
+.jq-file__browse {
+	padding: 0px 10px;
+	font: 14px/30px arial, tahoma, verdana;
+	text-shadow: 1px 1px 1px #ffffff;
+	color: #333333;
+	box-shadow: inset 1px -1px #f1f1f1,
+              inset -1px 0px #f1f1f1,
+              0px 1px 2px #000000;
+	background: #f1f1f1;
+	border-left: 1px solid #cccccc;
+	border-radius: 0px 4px 4px 0px;
+  behavior: url(PIE.htc);
+}
+.jq-file:hover .jq-file__browse {
+	background: #e6e6e6;
+	background-position: 0px -10px;
+}
+.jq-file:active .jq-file__browse {
+	background: #f5f5f5;
+	box-shadow: inset 1px 1px 3px #dddddd;
+  behavior: url(PIE.htc);
+}
+.jq-file.disabled,
+.jq-file.disabled .jq-file__browse {
+	background: #f5f5f5;
+	color: #888888;
+	box-shadow: none;
+	border-color: #cccccc;
+  behavior: url(PIE.htc);
+}
+/*end file*/
+
+/*select*/
+.box {
+  width: 220px;
+  height: 30px;
+  padding: 0px;
+  margin: 0px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  font: italic 12px/30px arial, tahoma, verdana;
+  color: #757679;
+  box-shadow: inset 3px 3px 3px #e6e9ea;
+	background: #ffffff;
+  behavior: url(PIE.htc);
+}
+.box .jq-selectbox {
+  width: 100%;
+}
+.box .jq-selectbox .select {
+  padding: 0px 20px 0px 8px;
+  float: none !important;
+  cursor: pointer;
+	background:  url(../images/arrow_seldown.png) 96% center no-repeat;
+  border: 1px solid #abb7bd;
+  border-left: 4px solid #e76a6a;
+}
+.box .jq-selectbox.opened .select {
+  padding: 0px 20px 0px 11px;
+	background:  url(../images/arrow_selup.png) 96% center no-repeat;
+  border: 1px solid #abb7bd;
+}
+.box .jq-selectbox .select .text {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.box .jq-selectbox .dropdown {
+  margin-top: 1px;
+  top: auto !important;
+	background: #ffffff;
+  box-shadow: /*inset 3px 3px 3px #e6e9ea,*/
+              0px 0px 10px #d8dddf;
+  border: 1px solid #d8dddf;
+}
+.box .jq-selectbox .slimScrollDiv {
+  margin: 15px 0px;
+}
+.box .jq-selectbox .dropdown ul {
+  width: 300px !important;
+  height: 242px !important;
+	padding: 0px;
+	margin: 0px;
+}
+.box .jq-selectbox .dropdown li {
+	padding: 10px 0px 0px 11px;
+  margin-right: 25px;
+  font: italic 12px/15px arial, tahoma, verdana;
+  color: #000000;
+}
+.box .jq-selectbox .dropdown li:first-child {
+	padding-top: 0px;
+}
+.box .jq-selectbox li:hover {
+	/*background: #ebebeb;*/
+  cursor: pointer;
+	color: #cc3333;
+}
+
+/*slimScrollBar*/
+.jq-selectbox .slimScrollBar {
+  width: 7px;
+  height: 50px !important;
+  right: 8px !important;
+  cursor: pointer;
+	background: #8b9498 !important;
+  border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  -o-border-radius: 0px !important;
+  -khtl-border-radius: 0px !important;
+  behavior: url(PIE.htc);
+}
+.jq-selectbox .slimScrollRail {
+  width: 7px;
+  height: 96.9% !important;
+  right: 8px !important;
+	background: url(../images/slimscrollbar.png) center top repeat-y !important;
+  border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  -o-border-radius: 0px !important;
+  -khtl-border-radius: 0px !important;
+  behavior: url(PIE.htc);
+}
+/*end slimScrollBar*/
+
+/*select multiple*/
+.jq-select-multiple {
+	padding: 1px;
+  font: normal 14px/30px 'Trebuchet MS', arial, tahoma;
+	box-shadow: 0px 1px 2px #e6e7e7;
+	background: #ffffff;
+	color: #333333;
+	cursor: default;
+  border-radius: 4px;
+	border: 1px solid #cccccc;
+	border-bottom-color: #b3b3b3;
+  behavior: url(PIE.htc);
+}
+.jq-select-multiple.focused {
+	border: 1px solid #5794bf;
+}
+.jq-select-multiple.disabled {
+	box-shadow: none;
+	color: #888888;
+	background: #f5f5f5;
+	border-color: #cccccc;
+}
+.jq-select-multiple ul {
+	margin: 0px;
+	padding: 0px;
+}
+.jq-select-multiple li {
+	padding: 3px 9px 4px 9px;
+	list-style: none;
+}
+.jq-select-multiple li:first-child {
+  border-radius: 4px 4px 0px 0px;
+  behavior: url(PIE.htc);
+}
+.jq-select-multiple li:last-child {
+	border-radius: 0px 0px 4px 4px;
+  behavior: url(PIE.htc);
+}
+.jq-select-multiple li.selected {
+	color: #ffffff;
+	background: #08cccc;
+}
+.jq-select-multiple li.disabled {
+	color: #aaaaaa;
+}
+.jq-select-multiple.disabled li.selected,
+.jq-select-multiple li.selected.disabled {
+	color: #cccccc;
+	background: #cccccc;
+}
+.jq-select-multiple li.optgroup {
+	font-weight: bold;
+}
+.jq-select-multiple li.option {
+	padding-left: 25px;
+}
+.jq-selectbox__select:hover {
+	background: #dce7ed;
+  border-color: #aab1bd;
+}
+.jq-selectbox__select:active {
+	background: #f5f5f5;
+	box-shadow: inset 1px 1px 3px #dddddd;
+}
+.jq-selectbox.focused .jq-selectbox__select {
+	border: 1px solid #5794fb;
+}
+.jq-selectbox.disabled .jq-selectbox__select {
+	color: #888888;
+	box-shadow: none;
+	background: #f5f5f5;
+	border-color: #cccccc;
+}
+/*end select multiple*/
