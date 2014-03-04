@@ -48,7 +48,7 @@
 
           <form class="search" action="#">
             <fieldset>
-              <input type="text" value="Поиск по сайту" onblur="if(!this.value)this.value='Поиск по сайту';" onfocus="if(this.value=='Поиск по сайту')this.value='';" style="min-width: 0px;">
+              <input type="text" value="Поиск по сайту" onblur="if(!this.value) this.value='Поиск по сайту'" onfocus="if(this.value=='Поиск по сайту') this.value=''" style="min-width: 0px;">
               <input type="submit" value="Найти">
             </fieldset>
           </form>
@@ -70,7 +70,7 @@
         <div class="sideright">Сайт создан студией <a href="http://www.fresh-d.net">Fresh</a><br><a href="#">Информация о сайте</a><br><span class="small">2013</span></div>
 
         <div class="sidecenter">
-          <div>Вы можете связаться с автором сайта <span class="dotted callback ordform"><a href="#"><span>заполнив форму</span></a></span><br>Контактный телефон: <strong class="black">(067) 737-81-17</strong><br>Эл.почта: <a href="mailto:info@fresh-d.net">info@fresh-d.net</a></div>
+          <div>Вы можете связаться с автором сайта <span class="dotted callback ordform"><a class="pop_feedback" href="javascript:void(0);"><span>заполнив форму</span></a></span><br>Контактный телефон: <strong class="black">(067) 737-81-17</strong><br>Эл.почта: <a href="mailto:info@fresh-d.net">info@fresh-d.net</a></div>
 
           <ul class="socweb">
             <li><a class="vk" href="#"></a></li>
@@ -86,5 +86,29 @@
 
 <div id="scroll_top"><a href="#top"></a></div>
 <div id="scroll_top_annonce"><a href="#top"></a></div>
+
+<div id="popfeedback">
+  <div class="popup">
+    <div class="section">
+      <a class="close" href="#"></a>
+      <div class="title"><h2>Форма обратной связи</h2></div>
+      <div class="title send"><h2>Сообщение отправлено</h2></div>
+      <div class="txt send">Спасибо за сообщение, мы свяжемся с вами в ближайшее рабоче время с 9:00 до 18:00</div>
+    </div>
+
+    <form id="popfeedbackclick" class="order inside nomarg" action="#">
+      <div class="body">
+        <fieldset class="form_enter">
+          <div class="row"><input type="text" value="Имя и фамилия" onblur="if(!this.value) this.value='Имя и фамилия'" onfocus="if(this.value=='Имя и фамилия') this.value=''"></div>
+          <div class="row" style="margin-right: 0px;"><input type="text" value="Эл.почта" onblur="if(!this.value) this.value='Эл.почта'" onfocus="if(this.value=='Эл.почта') this.value=''"></div>
+          <div class="row visible" style="display: block !important; margin: 0px 0px 15px 0px;"><textarea onfocus="this.value=''; this.onfocus=''" onBlur=''>Сообщение</textarea></div>
+          <div class="row nomarg"><input class="btn" type="button" value="Отправить сообщение"></div>
+        </fieldset>
+      </div><!-- /.body -->
+    </form>
+  </div><!-- /.popup -->
+
+  <div class="bg0"></div>
+</div><!-- /popfeedback -->
 </body>
 </html>

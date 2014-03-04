@@ -947,7 +947,7 @@ form.order.inside {
 .block_animefeedback {
   height: 420px;
   padding: 30px 0px 50px 0px;
-  margin: 0px 0px 0px 15px;
+  margin: 0px;
   position: relative;
 }
 .block_animefeedback .mailsend {
@@ -1965,26 +1965,35 @@ html, body, #map-canvas {
   margin: 0px 0px 0px 20px;
   overflow: hidden;
   text-decoration: none;
-  cursor: default;
   color: #757679;
   background: url(../images/arrow_pageleft_gray.png) left 5px no-repeat;
 }
-.pages a.arrow_pageright:link,
-.pages a.arrow_pageright:visited {
+.pages .dir a.arrow_pageright:link,
+.pages .dir a.arrow_pageright:visited {
   padding: 0px 20px 0px 0px;
   margin: 0px 0px 0px 20px;
   overflow: hidden;
   text-decoration: none;
+  color: #757679;
+  background: url(../images/arrow_pageright_gray.png) right 5px no-repeat;
+}
+.pages .dir a.arrow_pageleft.active:link,
+.pages .dir a.arrow_pageleft.active:visited {
+  color: #338888;
+  background: url(../images/arrow_pageleft_green.png) left 5px no-repeat;
+}
+.pages .dir a.arrow_pageright.active:link,
+.pages .dir a.arrow_pageright.active:visited {
   color: #338888;
   background: url(../images/arrow_pageright_green.png) right 5px no-repeat;
 }
-.pages a.arrow_pageright:link span,
-.pages a.arrow_pageright:visited span {
-  border-bottom: 1px solid #b2ced0;
-}
-.pages a.arrow_pageright:hover {
+.pages .dir a.arrow_pageleft:hover {
   color: #cc3333;
-  background: url(../images/arrow_pageright_red.png) right 5px no-repeat;
+  background: url(../images/arrow_pageleft_red.png) left 5px no-repeat !important;
+}
+.pages .dir a.arrow_pageright:hover {
+  color: #cc3333;
+  background: url(../images/arrow_pageright_red.png) right 5px no-repeat !important;
 }
 .pages .block_pages a:link,
 .pages .block_pages a:visited {
@@ -2027,6 +2036,19 @@ html, body, #map-canvas {
 /*end pages*/
 
 /*ClickFunctions*/
+/*Авторизация*/
+#poplogin .textact,
+#poplogin .fogact,
+#comms .textact,
+#comms .fogact {
+  display: none;
+}
+#poplogin .textact,
+#comms .textact {
+  margin-bottom: 15px;
+}
+/*end Авторизация*/
+
 /*Запись на прием*/
 #block_orderclick .blockslides,
 #block_orderclick .txt.send,
@@ -2046,8 +2068,8 @@ html, body, #map-canvas {
 /*end Задать вопрос врачу*/
 
 /*Форма обратной связи*/
-#popfeedback.popup .title.send,
-#popfeedback.popup .txt.send {
+#popfeedback .title.send,
+#popfeedback .txt.send {
   display: none;
 }
 /*end Форма обратной связи*/

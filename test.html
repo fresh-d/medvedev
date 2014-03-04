@@ -54,7 +54,7 @@
 
             <form class="search" action="#">
               <fieldset>
-                <input type="text" value="Поиск по сайту" onblur="if(!this.value)this.value='Поиск по сайту';" onfocus="if(this.value=='Поиск по сайту')this.value='';">
+                <input type="text" value="Поиск по сайту" onblur="if(!this.value) this.value='Поиск по сайту'" onfocus="if(this.value=='Поиск по сайту') this.value=''">
                 <input type="submit" value="Найти">
               </fieldset>
             </form>
@@ -90,10 +90,10 @@
                 <fieldset id="orderclick" class="main">
                   <div class="blockslides">
                     <div class="bord"></div>
-                    <div class="row"><input type="text" value="Имя и Фамилия" onblur="if(!this.value)this.value='Имя и Фамилия';" onfocus="if(this.value=='Имя и Фамилия')this.value='';"></div>
-                    <div class="row active"><input type="text" value="2315" onblur="if(!this.value)this.value='2315';" onfocus="if(this.value=='2315')this.value='';"></div>
-                    <div class="row"><input type="text" value="Эл.почта" onblur="if(!this.value)this.value='Эл.почта';" onfocus="if(this.value=='Эл.почта')this.value='';"></div>
-                    <div class="row"><textarea onfocus="this.value=''; this.onfocus='';" onBlur=''>Примечание</textarea></div>
+                    <div class="row"><input type="text" value="Имя и Фамилия" onblur="if(!this.value) this.value='Имя и Фамилия';" onfocus="if(this.value=='Имя и Фамилия') this.value=''"></div>
+                    <div class="row active"><input type="text" value="2315" onblur="if(!this.value) this.value='2315';" onfocus="if(this.value=='2315') this.value=''"></div>
+                    <div class="row"><input type="text" value="Эл.почта" onblur="if(!this.value) this.value='Эл.почта';" onfocus="if(this.value=='Эл.почта') this.value=''"></div>
+                    <div class="row"><textarea onfocus="this.value=''; this.onfocus=''" onBlur=''>Примечание</textarea></div>
                     <div class="row"><input class="btn" type="submit" value="Записаться"></div>
                   </div><!-- /.blockslides -->
 
@@ -141,8 +141,8 @@
           <form class="order inside nomarg" action="#">
             <div class="body">
               <fieldset class="form_enter">
-                <div class="row"><input type="text" value="Имя и Фамилия" onblur="if(!this.value)this.value='Имя и Фамилия';" onfocus="if(this.value=='Имя и Фамилия')this.value='';"></div>
-                <div class="row"><input type="text" value="Эл.почта" onblur="if(!this.value)this.value='Эл.почта';" onfocus="if(this.value=='Эл.почта')this.value='';"></div>
+                <div class="row"><input type="text" value="Имя и Фамилия" onblur="if(!this.value) this.value='Имя и Фамилия'" onfocus="if(this.value=='Имя и Фамилия') this.value=''"></div>
+                <div class="row"><input type="text" value="Эл.почта" onblur="if(!this.value) this.value='Эл.почта'" onfocus="if(this.value=='Эл.почта') this.value=''"></div>
               </fieldset>
 
               <div class="row both" style="margin-bottom: 0px; display: block !important;"><input class="pop_test" type="submit" value="Начать тестирование"></div> 
@@ -172,7 +172,7 @@
         <div class="sideright">Сайт создан студией <a href="http://www.fresh-d.net">Fresh</a><br><a href="#">Информация о сайте</a><br><span class="small">2013</span></div>
 
         <div class="sidecenter">
-          <div>Вы можете связаться с автором сайта <span class="dotted callback ordform"><a href="#"><span>заполнив форму</span></a></span><br>Контактный телефон: <strong class="black">(067) 737-81-17</strong><br>Эл.почта: <a href="mailto:info@fresh-d.net">info@fresh-d.net</a></div>
+          <div>Вы можете связаться с автором сайта <span class="dotted callback ordform"><a class="pop_feedback" href="javascript:void(0);"><span>заполнив форму</span></a></span><br>Контактный телефон: <strong class="black">(067) 737-81-17</strong><br>Эл.почта: <a href="mailto:info@fresh-d.net">info@fresh-d.net</a></div>
 
           <ul class="socweb">
             <li><a class="vk" href="#"></a></li>
@@ -189,54 +189,59 @@
 <div id="scroll_top"><a href="#top"></a></div>
 <div id="scroll_top_annonce"><a href="#top"></a></div>
 
-<div id="poptest" class="popup">
-  <div class="section">
-    <a class="close" href="#"></a>
-  </div>
-
-  <div class="body">
-    <div class="gray">Нормальная температура тела и терморегуляция</div>
-    <div class="title"><h2>Оптимальная температура жидкости, используемой для питья больному ребенку?</h2></div>
-    <div class="title active"><h2>Результаты тестирования</h2></div>
-    <div class="date tright">вопрос 43 из 50 // 07:25</div>
-    <div class="bord_hori"></div>
-
-    <p>Варианты ответа:</p>
-
-    <ol class="listing">
-      <li><a href="#">Умерянно горячая (40-50)</a></li>
-      <li><a href="#">Комнатная</a></li>
-      <li><a href="#">Близка к температуре тела</a></li>
-    </ol>
-
-    <div class="test active">
-      <p>Ответив на 50 вопросов теста, вы допустили 27 ошибок и затратили 12 мин. 28 сек.</p>
-      <p>К сожалению процент правильных ответов составил всего 46%, что ниже необходимого минимума 75%</p>
+<div id="poptest">
+  <div class="popup">
+    <div class="section">
+      <a class="close" href="#"></a>
     </div>
-  </div><!-- /.body -->
-</div><!-- /.popup -->
 
-<div id="popfeedback" class="popup">
- <div class="section">
-    <a class="close" href="#"></a>
-    <div class="title"><h2>Форма обратной связи</h2></div>
-    <div class="title send"><h2>Сообщение отправлено</h2></div>
-    <div class="txt send">Спасибо за сообщение, мы свяжемся с вами в ближайшее рабоче время с 9:00 до 18:00</div>
-  </div>
-
-  <form id="popfeedbackclick" class="order inside nomarg" action="#">
     <div class="body">
-      <fieldset class="form_enter">
-        <div class="row"><input type="text" value="Имя и фамилия" onblur="if(!this.value)this.value='Имя и фамилия';" onfocus="if(this.value=='Имя и фамилия')this.value='';"></div>
-        <div class="row" style="margin-right: 0px;"><input type="text" value="Эл.почта" onblur="if(!this.value)this.value='Эл.почта';" onfocus="if(this.value=='Эл.почта')this.value='';"></div>
-        <div class="row visible" style="display: block !important; margin: 0px 0px 15px 0px;"><textarea onfocus="this.value=''; this.onfocus='';" onBlur='')>Сообщение</textarea></div>
-        <div class="row nomarg"><input class="btn" type="button" value="Отправить сообщение"></div>
-      </fieldset>
-    </div><!-- /.body -->
-  </form>
-</div><!-- /.popup -->
+      <div class="gray">Нормальная температура тела и терморегуляция</div>
+      <div class="title"><h2>Оптимальная температура жидкости, используемой для питья больному ребенку?</h2></div>
+      <div class="title active"><h2>Результаты тестирования</h2></div>
+      <div class="date tright">вопрос 43 из 50 // 07:25</div>
+      <div class="bord_hori"></div>
 
-<div class="bg0"></div>
-<div class="bg1"></div>
+      <p>Варианты ответа:</p>
+
+      <ol class="listing">
+        <li><a href="#">Умерянно горячая (40-50)</a></li>
+        <li><a href="#">Комнатная</a></li>
+        <li><a href="#">Близка к температуре тела</a></li>
+      </ol>
+
+      <div class="test active">
+        <p>Ответив на 50 вопросов теста, вы допустили 27 ошибок и затратили 12 мин. 28 сек.</p>
+        <p>К сожалению процент правильных ответов составил всего 46%, что ниже необходимого минимума 75%</p>
+      </div>
+    </div><!-- /.body -->
+  </div><!-- /.popup -->
+
+  <div class="bg0"></div>
+</div><!-- /poptest -->
+
+<div id="popfeedback">
+  <div class="popup">
+    <div class="section">
+      <a class="close" href="#"></a>
+      <div class="title"><h2>Форма обратной связи</h2></div>
+      <div class="title send"><h2>Сообщение отправлено</h2></div>
+      <div class="txt send">Спасибо за сообщение, мы свяжемся с вами в ближайшее рабоче время с 9:00 до 18:00</div>
+    </div>
+
+    <form id="popfeedbackclick" class="order inside nomarg" action="#">
+      <div class="body">
+        <fieldset class="form_enter">
+          <div class="row"><input type="text" value="Имя и фамилия" onblur="if(!this.value) this.value='Имя и фамилия';" onfocus="if(this.value=='Имя и фамилия') this.value=''"></div>
+          <div class="row" style="margin-right: 0px;"><input type="text" value="Эл.почта" onblur="if(!this.value) this.value='Эл.почта';" onfocus="if(this.value=='Эл.почта') this.value=''"></div>
+          <div class="row visible" style="display: block !important; margin: 0px 0px 15px 0px;"><textarea onfocus="this.value=''; this.onfocus=''" onBlur=''>Сообщение</textarea></div>
+          <div class="row nomarg"><input class="btn" type="button" value="Отправить сообщение"></div>
+        </fieldset>
+      </div><!-- /.body -->
+    </form>
+  </div><!-- /.popup -->
+
+  <div class="bg0"></div>
+</div><!-- /popfeedback -->
 </body>
 </html>

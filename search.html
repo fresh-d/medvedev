@@ -54,7 +54,7 @@
 
             <form class="search" action="#">
               <fieldset>
-                <input type="text" value="Поиск по сайту" onblur="if(!this.value)this.value='Поиск по сайту';" onfocus="if(this.value=='Поиск по сайту')this.value='';">
+                <input type="text" value="Поиск по сайту" onblur="if(!this.value) this.value='Поиск по сайту'" onfocus="if(this.value=='Поиск по сайту') this.value=''">
                 <input type="submit" value="Найти">
               </fieldset>
             </form>
@@ -90,10 +90,10 @@
                 <fieldset id="orderclick" class="main">
                   <div class="blockslides">
                     <div class="bord"></div>
-                    <div class="row"><input type="text" value="Имя и Фамилия" onblur="if(!this.value)this.value='Имя и Фамилия';" onfocus="if(this.value=='Имя и Фамилия')this.value='';"></div>
-                    <div class="row active"><input type="text" value="2315" onblur="if(!this.value)this.value='2315';" onfocus="if(this.value=='2315')this.value='';"></div>
-                    <div class="row"><input type="text" value="Эл.почта" onblur="if(!this.value)this.value='Эл.почта';" onfocus="if(this.value=='Эл.почта')this.value='';"></div>
-                    <div class="row"><textarea onfocus="this.value=''; this.onfocus='';" onBlur=''>Примечание</textarea></div>
+                    <div class="row"><input type="text" value="Имя и Фамилия" onblur="if(!this.value) this.value='Имя и Фамилия'" onfocus="if(this.value=='Имя и Фамилия') this.value=''"></div>
+                    <div class="row active"><input type="text" value="2315" onblur="if(!this.value) this.value='2315'" onfocus="if(this.value=='2315') this.value=''"></div>
+                    <div class="row"><input type="text" value="Эл.почта" onblur="if(!this.value) this.value='Эл.почта'" onfocus="if(this.value=='Эл.почта') this.value=''"></div>
+                    <div class="row"><textarea onfocus="this.value=''; this.onfocus=''" onBlur=''>Примечание</textarea></div>
                     <div class="row"><input class="btn" type="submit" value="Записаться"></div>
                   </div><!-- /.blockslides -->
 
@@ -164,7 +164,7 @@
         <div class="sideright">Сайт создан студией <a href="http://www.fresh-d.net">Fresh</a><br><a href="#">Информация о сайте</a><br><span class="small">2013</span></div>
 
         <div class="sidecenter">
-          <div>Вы можете связаться с автором сайта <span class="dotted callback ordform"><a href="#"><span>заполнив форму</span></a></span><br>Контактный телефон: <strong class="black">(067) 737-81-17</strong><br>Эл.почта: <a href="mailto:info@fresh-d.net">info@fresh-d.net</a></div>
+          <div>Вы можете связаться с автором сайта <span class="dotted callback ordform"><a class="pop_feedback" href="javascript:void(0);"><span>заполнив форму</span></a></span><br>Контактный телефон: <strong class="black">(067) 737-81-17</strong><br>Эл.почта: <a href="mailto:info@fresh-d.net">info@fresh-d.net</a></div>
 
           <ul class="socweb">
             <li><a class="vk" href="#"></a></li>
@@ -181,66 +181,82 @@
 <div id="scroll_top"><a href="#top"></a></div>
 <div id="scroll_top_annonce"><a href="#top"></a></div>
 
-<div id="poplogin" class="popup">
- <div class="section">
-    <a class="close" href="#"></a>
-    <div class="title"><h2>Вход на сайт</h2></div>
-  </div>
+<div id="poplogin">
+  <div class="popup">
+    <div class="section">
+      <a class="close" href="#"></a>
+      <div class="title"><h2>Вход на сайт</h2></div>
+    </div>
 
-  <form class="order" action="#">
-    <div class="body">
-      <fieldset class="form_enter">
-        <div class="row"><input type="text" value="Эл.почта" onblur="if(!this.value)this.value='Эл.почта';" onfocus="if(this.value=='Эл.почта')this.value='';"></div>
-        <div class="row"><input type="text" value="Пароль" onblur="if(!this.value)this.value='Пароль';" onfocus="if(this.value=='Пароль')this.value='';"></div>
+    <form class="order" action="#">
+      <div class="body">
+        <fieldset class="form_enter">
+          <div class="text textact">Введите адрес электронной почты указанный при регистрации.</div>
+          <div class="row nomarg"><input type="text" value="Эл.почта" onblur="if(!this.value) this.value='Эл.почта'" onfocus="if(this.value=='Эл.почта') this.value=''"></div>
+          <div class="row inpdef"><input type="text" value="Пароль" onblur="if(!this.value) this.value='Пароль'" onfocus="if(this.value=='Пароль') this.value=''"></div>
 
-        <div class="row visible">
-          <span class="left fog"><input type="checkbox"> Запомнить меня</span>
-          <span class="right"><input type="submit" value="Войти"></span>
-        </div>
+          <div class="row fogdef">
+            <div class="row visible">
+              <span class="left fog"><input type="checkbox"> Запомнить меня</span>
+              <span class="right"><input type="submit" value="Войти"></span>
+            </div>
 
-        <div class="row both dotted green" style="padding-top: 10px;"><a href="#"><span>Забыли пароль?</span></a></div>
+            <div class="row both dotted green" style="padding-top: 10px;"><a class="pop_forget" href="#"><span>Забыли пароль?</span></a></div>
+          </div><!-- /.fogdef -->
+
+          <div class="row fogact">
+            <div class="row visible">
+              <span class="right"><input type="submit" value="Восстановить пароль" style="width: 220px;"></span>
+            </div>
+
+            <div class="row both dotted green" style="padding-top: 10px;"><a class="pop_forget_back" href="#"><span>Вернуться назад</span></a></div>
+          </div><!-- /.fogact -->
+        </fieldset>
+
+        <fieldset>
+          <div class="text crop">Если у вас еще нет аккаунта на нашем сайте — зарегистрируйтесь и после регистрации вы сможете комментировать материалы сайта, участвовать в тестировании, писать отзывы и т.д.</div>
+          <div class="row"><a class="btn keybtn" href="#">Регистрация</a></div>
+        </fieldset>
+      </div><!-- /.body -->
+
+      <fieldset class="block_socweb both">
+        <span class="left relative" style="margin-right: 10px; top: 5px;">Вход через:</span>
+
+        <ul class="socweb nopad left">
+          <li><a class="vk" href="#"></a></li>
+          <li><a class="odnoklassniki" href="#"></a></li>
+          <li><a class="facebook" href="#"></a></li>
+          <li><a class="google" href="#"></a></li>
+        </ul>
       </fieldset>
+    </form>
+  </div><!-- /.popup -->
 
-      <fieldset>
-        <div class="text crop">Если у вас еще нет аккаунта на нашем сайте — зарегистрируйтесь и после регистрации вы сможете комментировать материалы сайта, участвовать в тестировании, писать отзывы и т.д.</div>
-        <div class="row"><a class="btn keybtn" href="#">Регистрация</a></div>
-      </fieldset>
-    </div><!-- /.body -->
+  <div class="bg0"></div>
+</div><!-- /poplogin -->
 
-    <fieldset class="block_socweb both">
-      <span class="left relative" style="margin-right: 10px; top: 5px;">Вход через:</span>
+<div id="popfeedback">
+  <div class="popup">
+    <div class="section">
+      <a class="close" href="#"></a>
+      <div class="title"><h2>Форма обратной связи</h2></div>
+      <div class="title send"><h2>Сообщение отправлено</h2></div>
+      <div class="txt send">Спасибо за сообщение, мы свяжемся с вами в ближайшее рабоче время с 9:00 до 18:00</div>
+    </div>
 
-      <ul class="socweb nopad left">
-        <li><a class="vk" href="#"></a></li>
-        <li><a class="odnoklassniki" href="#"></a></li>
-        <li><a class="facebook" href="#"></a></li>
-        <li><a class="google" href="#"></a></li>
-      </ul>
-    </fieldset>
-  </form>
-</div><!-- /.popup -->
+    <form id="popfeedbackclick" class="order inside nomarg" action="#">
+      <div class="body">
+        <fieldset class="form_enter">
+          <div class="row"><input type="text" value="Имя и фамилия" onblur="if(!this.value) this.value='Имя и фамилия'" onfocus="if(this.value=='Имя и фамилия') this.value=''"></div>
+          <div class="row" style="margin-right: 0px;"><input type="text" value="Эл.почта" onblur="if(!this.value) this.value='Эл.почта'" onfocus="if(this.value=='Эл.почта') this.value=''"></div>
+          <div class="row visible" style="display: block !important; margin: 0px 0px 15px 0px;"><textarea onfocus="this.value=''; this.onfocus=''" onBlur=''>Сообщение</textarea></div>
+          <div class="row nomarg"><input class="btn" type="button" value="Отправить сообщение"></div>
+        </fieldset>
+      </div><!-- /.body -->
+    </form>
+  </div><!-- /.popup -->
 
-<div id="popfeedback" class="popup">
- <div class="section">
-    <a class="close" href="#"></a>
-    <div class="title"><h2>Форма обратной связи</h2></div>
-    <div class="title send"><h2>Сообщение отправлено</h2></div>
-    <div class="txt send">Спасибо за сообщение, мы свяжемся с вами в ближайшее рабоче время с 9:00 до 18:00</div>
-  </div>
-
-  <form id="popfeedbackclick" class="order inside nomarg" action="#">
-    <div class="body">
-      <fieldset class="form_enter">
-        <div class="row"><input type="text" value="Имя и фамилия" onblur="if(!this.value)this.value='Имя и фамилия';" onfocus="if(this.value=='Имя и фамилия')this.value='';"></div>
-        <div class="row" style="margin-right: 0px;"><input type="text" value="Эл.почта" onblur="if(!this.value)this.value='Эл.почта';" onfocus="if(this.value=='Эл.почта')this.value='';"></div>
-        <div class="row visible" style="display: block !important; margin: 0px 0px 15px 0px;"><textarea onfocus="this.value=''; this.onfocus='';" onBlur='')>Сообщение</textarea></div>
-        <div class="row nomarg"><input class="btn" type="button" value="Отправить сообщение"></div>
-      </fieldset>
-    </div><!-- /.body -->
-  </form>
-</div><!-- /.popup -->
-
-<div class="bg0"></div>
-<div class="bg1"></div>
+  <div class="bg0"></div>
+</div><!-- /popfeedback -->
 </body>
 </html>

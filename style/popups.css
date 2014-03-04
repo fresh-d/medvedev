@@ -1,4 +1,4 @@
-﻿/*Modified 31.01.2014*/
+﻿/*Modified 27.02.2014*/
 
 .popup {
 	width: 560px;
@@ -17,14 +17,14 @@
   behavior: url(PIE.htc);*/
 	z-index: 999;
 }
-#poplogin.popup,
-#poptest.popup,
-#popfeedback.popup {
+#poplogin .popup,
+#poptest .popup,
+#popfeedback .popup {
 	padding: 0px 0px !important;
 	margin: 0px 0px 0px -280px;
 	top: -99999px;
 }
-#popfeedback.popup {
+#popfeedback .popup {
 	width: 531px;
 	margin: 0px 0px 0px -265px;
 }
@@ -71,7 +71,7 @@
   border-bottom: 1px solid #cccccc;
   behavior: url(PIE.htc);*/
 }
-#poptest.popup .section {
+#poptest .popup .section {
   padding: 20px 40px 10px 40px;
 }
 .popup .title,
@@ -79,7 +79,7 @@
   margin: 0px !important;
   /*text-align: center;*/
 }
-#poptest.popup .title {
+#poptest .popup .title {
   margin: 10px 0px 15px 0px !important;
 }
 .popup .title h2,
@@ -98,8 +98,8 @@
 .commentform .title h2 a:hover {
   text-decoration: underline;
 }
-#poptest.popup .title.active,
-#poptest.popup .test.active {
+#poptest .popup .title.active,
+#poptest .popup .test.active {
   display: none;
 }
 /*end section*/
@@ -118,10 +118,14 @@
   margin-bottom: 20px;
   background: url(../images/bord_vert.png) 273px 0px repeat-y;
 }
-#poptest.popup .body {
+#poplogin .popup .body {
+  padding-bottom: 0px;
+}
+#poptest .popup .body {
   color: #000000;
 }
-#popfeedback.popup .body {
+#popfeedback .popup .body {
+  padding-top: 0px;
   background: none;
 }
 /*.popup h2 a:link,
@@ -181,7 +185,7 @@ ol.listing li a:hover {
   font: normal 12px/15px arial, tahoma, verdana;
   color: #000000;
 }
-#poptest.popup form {
+#poptest .popup form {
   font: normal 15px/20px arial, tahoma, verdana;
 }
 .popup form fieldset.form_enter,
@@ -191,7 +195,7 @@ ol.listing li a:hover {
   overflow: hidden;
   float: left;
 }
-#popfeedback.popup form fieldset.form_enter {
+#popfeedback .popup form fieldset.form_enter {
   width: auto;
   margin: 0px;
   float: none;
@@ -235,7 +239,7 @@ ol.listing li a:hover {
   *display: inline;
   vertical-align: top;
 }
-#popfeedback.popup textarea {
+#popfeedback .popup textarea {
 	width: 95.5%;
   resize: none;
 }
@@ -359,8 +363,7 @@ ol.listing li a:hover {
 }*/
 /*end popup form*/
 
-.bg0,
-.bg1 {
+.bg0 {
 	position: fixed;
 	top: 0px;
 	left: 0px;
