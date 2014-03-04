@@ -1993,12 +1993,12 @@ html, body, #map-canvas {
   overflow: hidden;
   text-decoration: none;
   color: #757679;
-  background: url(../images/arrow_pageright_gray.png) right 5px no-repeat;
+  background: url(./images/arrow_pageright_gray.png) right 5px no-repeat;
 }
 .pages .dir a.arrow_pageleft.active:link,
 .pages .dir a.arrow_pageleft.active:visited {
   color: #338888;
-  background: url(../images/arrow_pageleft_green.png) left 5px no-repeat;
+  background: url(./images/arrow_pageleft_green.png) left 5px no-repeat;
 }
 .pages .dir a.arrow_pageright.active:link,
 .pages .dir a.arrow_pageright.active:visited {
@@ -2007,11 +2007,11 @@ html, body, #map-canvas {
 }
 .pages .dir a.arrow_pageleft:hover {
   color: #cc3333;
-  background: url(../images/arrow_pageleft_red.png) left 5px no-repeat !important;
+  background: url(./images/arrow_pageleft_red.png) left 5px no-repeat !important;
 }
 .pages .dir a.arrow_pageright:hover {
   color: #cc3333;
-  background: url(../images/arrow_pageright_red.png) right 5px no-repeat !important;
+  background: url(./images/arrow_pageright_red.png) right 5px no-repeat !important;
 }
 .pages .block_pages a:link,
 .pages .block_pages a:visited {
