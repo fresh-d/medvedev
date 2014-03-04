@@ -176,79 +176,118 @@
   /*Popups ---------------------------------------------------------------------------------------*/
   /*#poplogin*/
   $('.pop_login').click(function(){
-    $('#poplogin').show();
-    $('#poplogin').animate({top:'0px'}, 0);
-    $('#poplogin').animate({top:'25%'}, 200);
-    $('#poplogin').animate({top:'15%'}, 150);
-    $('#poplogin').animate({top:'20%'}, 200);
+    $('#poplogin .popup').show();
+    $('#poplogin .popup').animate({top:'0px'}, 0);
+    $('#poplogin .popup').animate({top:'25%'}, 200);
+    $('#poplogin .popup').animate({top:'15%'}, 150);
+    $('#poplogin .popup').animate({top:'20%'}, 200);
     //$('#poplogin').stop(true,true).animate({top:'20%'}, 200);
-  $('.bg0').fadeIn();
+    $('#poplogin .bg0').fadeIn();
 		return false;
   });
 
-	$('#poplogin .close, .bg0').click(function(){
-    $('#poplogin').animate({top:'25%'}, 150);
-    $('#poplogin').animate({top:'-999px'}, 600);
-		$('.bg0:visible').delay(800).fadeOut();
+  $('#poplogin .pop_forget').click(function(){
+    $('#poplogin .textdef, #poplogin .fogdef, #poplogin .inpdef').hide();
+    $('#poplogin .textact, #poplogin .fogact').show();
 		return false;
 	});
+
+  $('#poplogin .pop_forget_back').click(function(){
+    $('#poplogin .textdef, #poplogin .fogdef, #poplogin .inpdef').show();
+    $('#poplogin .textact, #poplogin .fogact').hide();
+		return false;
+	});
+
+	$('#poplogin .close, #poplogin .bg0').click(function(){
+    $('#poplogin .popup').animate({top:'25%'}, 150);
+    $('#poplogin .popup').animate({top:'-999px'}, 600);
+		$('#poplogin .bg0:visible').delay(800).fadeOut();
+    $('#poptest .test, #poptest .title, #poptest .date, #poptest ol.listing').delay(800).fadeIn(0);
+    $('#poplogin .textdef, #poplogin .fogdef, #poplogin .inpdef').delay(800).fadeIn(0);
+    $('#poplogin .textact, #poplogin .fogact').delay(800).fadeOut(0);
+		return false;
+	});
+
+  /*Аналогично для формы комментариев с авторизацией*/
+  $('#comms .pop_forget').click(function(){
+    $('#comms .textdef, #comms .fogdef, #comms .inpdef').hide();
+    $('#comms .textact, #comms .fogact').show();
+		return false;
+	});
+
+  $('#comms .pop_forget_back').click(function(){
+    $('#comms .textdef, #comms .fogdef, #comms .inpdef').show();
+    $('#comms .textact, #comms .fogact').hide();
+		return false;
+	});
+  /*end Аналогично для формы комментариев с авторизацией*/
   /*end #poplogin*/
+
+  /*#popfeedback*/
+  $('.pop_feedback').click(function(){
+    $('#popfeedback .popup').show();
+    $('#popfeedback .popup').animate({top:'0px'}, 0);
+    $('#popfeedback .popup').animate({top:'25%'}, 200);
+    $('#popfeedback .popup').animate({top:'15%'}, 150);
+    $('#popfeedback .popup').animate({top:'20%'}, 200);
+    $('#popfeedback .bg0').fadeIn();
+		return false;
+  });
+
+	$('#popfeedback .close, #popfeedback .bg0').click(function(){
+    $('#popfeedback .popup').animate({top:'25%'}, 150);
+    $('#popfeedback .popup').animate({top:'-999px'}, 600);
+		$('#popfeedback .bg0:visible').delay(800).fadeOut();
+		return false;
+	});
+
+  /*Форма обратной связи (вывод сообщения)*/
+  $('#popfeedback input.btn').click(function(){
+    $('#popfeedback .title').hide();
+    $('#popfeedbackclick').hide();
+    $('#popfeedback .title.send').fadeIn();
+    $('#popfeedback .txt.send').fadeIn();
+		return false;
+	});
+
+	$('#popfeedback .close, #popfeedback .bg0').click(function(){
+    $('#popfeedback').animate({top:'25%'}, 150);
+    $('#popfeedback').animate({top:'-999px'}, 600);
+		$('#popfeedback .bg0:visible').delay(800).fadeOut();
+    $('#popfeedback .title').delay(800).fadeIn(0);
+    $('#popfeedback .title.send').delay(800).fadeOut(0);
+    $('#popfeedback .txt.send').delay(800).fadeOut(0);
+    $('#popfeedbackclick').delay(800).fadeIn(0);
+		return false;
+	});
+  /*end Форма обратной связи (вывод сообщения)*/
+  /*end #popfeedback*/
 
   /*poptest*/
   $('.pop_test').click(function(){
-    $('#poptest').show();
-    $('#poptest').animate({top:'0px'}, 0);
-    $('#poptest').animate({top:'25%'}, 200);
-    $('#poptest').animate({top:'15%'}, 150);
-    $('#poptest').animate({top:'20%'}, 200);
-  $('.bg0').fadeIn();
+    $('#poptest .popup').show();
+    $('#poptest .popup').animate({top:'0px'}, 0);
+    $('#poptest .popup').animate({top:'25%'}, 200);
+    $('#poptest .popup').animate({top:'15%'}, 150);
+    $('#poptest .popup').animate({top:'20%'}, 200);
+    $('#poptest .bg0').fadeIn();
 		return false;
   });
-
-	$('#poptest .close, .bg0').click(function(){
-    $('#poptest').animate({top:'25%'}, 150);
-    $('#poptest').animate({top:'-999px'}, 600);
-		$('.bg0:visible').delay(800).fadeOut();
-		return false;
-	});
 
   $('#poptest ol.listing li a').click(function(){
     $('#poptest .test, #poptest .title, #poptest .date, #poptest ol.listing').hide();
     $('#poptest .test.active, #poptest .title.active').show();
 	});
+
+	$('#poptest .close, #poptest .bg0').click(function(){
+    $('#poptest .popup').animate({top:'25%'}, 150);
+    $('#poptest .popup').animate({top:'-999px'}, 600);
+		$('#poptest .bg0:visible').delay(800).fadeOut();
+    $('#poptest .test, #poptest .title, #poptest .date, #poptest ol.listing').delay(800).fadeIn(0);
+    $('#poptest .test.active, #poptest .title.active').delay(800).fadeOut(0);
+		return false;
+	});
   /*end poptest*/
-
-  /*#popfeedback*/
-  $('.pop_feedback').click(function(){
-    $('#popfeedback').show();
-    $('#popfeedback').animate({top:'0px'}, 0);
-    $('#popfeedback').animate({top:'25%'}, 200);
-    $('#popfeedback').animate({top:'15%'}, 150);
-    $('#popfeedback').animate({top:'20%'}, 200);
-  $('.bg1').fadeIn();
-		return false;
-  });
-
-  /*Форма обратной связи*/
-  $('#popfeedback.popup input.btn').click(function(){
-    $('#popfeedback.popup .title').hide();
-    $('#popfeedbackclick').hide();
-    $('#popfeedback.popup .title.send').fadeIn();
-    $('#popfeedback.popup .txt.send').fadeIn();
-	});
-
-	$('#popfeedback .close, .bg1').click(function(){
-    $('#popfeedback').animate({top:'25%'}, 150);
-    $('#popfeedback').animate({top:'-999px'}, 600);
-		$('.bg1:visible').delay(800).fadeOut();
-    $('#popfeedback.popup .title').delay(800).fadeIn(0);
-    $('#popfeedback.popup .title.send').delay(800).fadeOut(0);
-    $('#popfeedback.popup .txt.send').delay(800).fadeOut(0);
-    $('#popfeedbackclick').delay(800).fadeIn(0);
-		return false;
-	});
-  /*end Форма обратной связи*/
-  /*end #popfeedback*/
   /*end Popups -----------------------------------------------------------------------------------*/
 
   /*nth-js ---------------------------------------------------------------------------------------*/
